@@ -16,5 +16,5 @@ class App < Sinatra::Base
     @friends = ["Charlie Chaplin", "Richard Pryor", "Eddie Murphy", "Louis CK", "Jerry Seinfeld"]
     erb :friends
   end
-
+  #tests
 end
