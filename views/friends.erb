@@ -6,13 +6,13 @@
   <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
  </head>
  <body>
-  <h1> My Super Cool Friends List </h1>
+  <h1 align="left"> My Super Cool Friends List </h1>
 
   <!-- Iterate through the @friends array here to display each item in its own <h2> tag -->
 
   <% @friends.each do |friend| %>
+    <p align="left"><%= friend%></p>
   <% end %>
-  <h2><%= friend\n %></h2>
 
  </body>
 </html>
