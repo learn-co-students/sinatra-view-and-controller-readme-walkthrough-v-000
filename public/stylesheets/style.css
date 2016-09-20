@@ -3,3 +3,11 @@ body {
   background-color: #D4F5F5;
   color: #554348
 }
+
+ol {
+  display: inline-block;
+}
+
+li {
+  text-align: justify;
+}
