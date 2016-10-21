@@ -9,6 +9,15 @@
   <h1> My Super Cool Friends List </h1>
 
   <!-- Iterate through the @friends array here to display each item in its own <h2> tag -->
+  <% @friends.each do |friend| %>
+    <h2><%= friend %></h2>
+  <% end %>
+    <!--It will render as follows:
+    <h2>Charlie Chaplin</h2>
+    <h2>Richard Pryor</h2>
+    <h2>Eddie Murphy</h2>
+    <h2>Louis CK</h2>
+    <h2>Jerry Seinfeld</h2> -->
 
 
  </body>
