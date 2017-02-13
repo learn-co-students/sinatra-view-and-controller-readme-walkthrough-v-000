@@ -16,7 +16,7 @@ In this code-along, we'll show you how to pass data back to views from your cont
 
 Why is passing data back to views from your controller so important? It allows us to make your pages *dynamic* rather than *static* - that is, the data can change depending on the inputs provided by the user. As an example, we'll be creating a "String Reverser" - the user inputs a string ("Hello World") into an HTML form, and is shown the reverse of the string ("dlroW olleH") on the following page.
 
-To code along, fork and clone this repository. Run `bundle install` from the command line to ensure you have the proper dependencies installed. The starter code contains a basic Sinatra application which you can access by running `shotgun` in your command line and then opening `http://localhost:9393/reverse` in your browser.
+To code along, fork and clone this repository. Run `bundle install` from the command line to ensure you have the proper dependencies installed. The starter code contains a basic Sinatra application which you can access by running the proper `shotgun` command in your command line and then previewing the app (with `/reverse` at the end of the URL).  As a reminder, the base URL of the app can always be found by using the cloud9 menu: `Preview` > `Preview Running Application`.
 
 ### Starter Code
 
@@ -154,5 +154,3 @@ This will set up a loop through all items in `@friends` and then place each item
 <h2>Jerry Seinfeld</h2>
 ```
 You can imagine how powerful iteration in erb is when you have an array of thousands of items that you have to display in your view! 
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sinatra-view-and-controller-readme-walkthrough' title='Passing Data Between Views And Controllers in Sinatra'>Passing Data Between Views And Controllers in Sinatra</a> on Learn.co and start learning to code for free.</p>
