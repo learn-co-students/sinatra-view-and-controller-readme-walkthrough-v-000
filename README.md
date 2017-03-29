@@ -54,7 +54,7 @@ To manipulate the string, let's take it out of the params hash, and then call th
 ```ruby
   post '/reverse' do
     original_string = params["string"]
-    reversed_string = original_string.reverse
+    @reversed_string = original_string.reverse
     erb :reversed
   end
 ```
