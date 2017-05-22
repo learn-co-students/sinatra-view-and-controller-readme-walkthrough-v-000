@@ -7,11 +7,14 @@ class App < Sinatra::Base
   end
 
   post '/reverse' do
+    org_str = params[:string]
+    @rev_str = org_str.reverse
     erb :reversed
   end
 
   get '/friends' do
-    #write your code here
+    @friends = ["Charlie Chaplin", "Richard Pryor", "Eddie Murphy", "Louis CK", "Jerry Seinfeld"]
+    erb :friends
   end
 
 end
