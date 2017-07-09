@@ -5,11 +5,14 @@
     <title>My Super Cool Friends List</title>
     <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
   </head>
-
   <body>
     <h1>My Super Cool Friends List</h1>
-
+    <form method="GET" action="/friends">
+    <p>Friends' list <input type="text" name="string"></p>
     <!-- Iterate through the @friends array here to display each item in its own <h2> tag -->
-
+    <%@friends.each do |friend|%>
+    <h2><%= friend %></h2>
+    <% end %>
+   </form>
   </body>
 </html>
