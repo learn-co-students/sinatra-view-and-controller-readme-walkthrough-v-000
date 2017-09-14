@@ -17,6 +17,7 @@ Why is passing data back to views from your controller so important? It allows u
 
 To code along, fork and clone this repository. Run `bundle install` from the command line to ensure you have the proper dependencies installed. The starter code contains a basic Sinatra application which you can access by running `shotgun` in your command line and then opening `http://localhost:9393/reverse` in your browser.
 
+
 ### Starter Code
 
 Let's take a closer look at the starter code.
