@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Super Cool Friends List</title>
-    <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
-  </head>
-
+    <head>
+      <meta charset="UTF-8">
+      <title>Sinatra Practice</title>
+      <style>
+        body {text-align: center;color: #ffffff;background-color:#ffffff;background-image:url(https://wallpapercave.com/wp/wp1923355.jpg); background-repeat:repeat-y; background-position:top left; background-attachment:scroll; margin: 0;}
+        h1 {;font-size: 5em;text-shadow: 0 0 50px #4BC6E2;margin-bottom: 0;}
+        p {;font-family: Georgia, serif;font-size: 33px;font-style: italic;font-weight: normal;color: #ffffff;background-color: rgba(27, 23, 23, 0.92);padding: 18px; margin-right: -4px;margin-bottom: 0;}
+      </style>
+    </head>
+<!------------------------------------------------------------------------->
   <body>
+    
     <h1>My Super Cool Friends List</h1>
 
-    <!-- Iterate through the @friends array here to display each item in its own <h2> tag -->
+    <% @friends.each{ |f| %> <p><%= f %> </p> <%}%>
 
   </body>
 </html>
