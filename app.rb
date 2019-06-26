@@ -9,8 +9,10 @@ class App < Sinatra::Base
     original_string = params[:string]
     @reversed_string = original_string.reverse
     # puts reversed_string (before changing it to an instance variable)
-    print self.class.ancestors
-    #erb :reversed
+    # print self.class.ancestors
+    #"<%= @reversed_string %>"
+    
+    erb :reversed
   end
 
   get '/friends' do
