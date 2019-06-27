@@ -6,13 +6,19 @@ class App < Sinatra::Base
   end
 
   post '/reverse' do
-    original_string = params[:string]
+    # puts params
+    
+    original_string = params["string"]
     @reversed_string = original_string.reverse
-    # puts reversed_string (before changing it to an instance variable)
-    # print self.class.ancestors
-    #"<%= @reversed_string %>"
     
     erb :reversed
+    
+    # puts reversed_string # (before changing it to an instance variable)
+    
+    # This was an experiment: Is there a way to output @reversed_string with string interpolation instead of #erb? (Not as far as I can tell yet). 
+    # Also, I was trying to understand how controller instance variables and views can be in the same scope (MAJOR rabbit hole!).
+    # print self.class.ancestors
+    #"<%= @reversed_string %>"
   end
 
   get '/friends' do
