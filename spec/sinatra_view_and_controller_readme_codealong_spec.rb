@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-puts describe "App" do
+ describe "App" do
   describe 'POST /reverse' do
     it 'responds with a 200' do
       params = {
@@ -12,7 +12,7 @@ puts describe "App" do
       expect(last_response.status).to eq(200)
     end
 
-  puts   it 'displays the reversed string' do
+    it 'displays the reversed string' do
       params = {
         :string => 'Super Silly String'
       }
