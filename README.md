@@ -40,7 +40,7 @@ Let's start by taking a look at our params when we submit the form on the /rever
 
 ```ruby
 post '/reverse' do
-  puts params
+  puts params[:string].reverse
 
   erb :reversed
 end
